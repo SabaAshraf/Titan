@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<section id="contact-us">
+	<section id="contact-us-banner" class="img-responsive" style="background-image: url({{ page.banner-image }}); background-repeat: no-repeat;background-position: center;background-size: cover">
+		<div class="container">
+			<div class="contact-us-banner-content">
+				<h1>{{ page.banner-heading }}</h1>
+			</div>
+		</div>
+	</section>
+	<section id="get-in-touch">
+		<div class="container">
+			<div class="row">
+				<h1>{{ page.get-in-touch-heading }}</h1>
+				<div class="underline-image-div"><img src="{{ page.underline }}"></div>
+				<p id="description">{{ page.description }}</p>
+				<div class="col-md-4 contacts">
+				<img src="{{ page.address-image }}">
+				<h5>{{ page.address-heading }}</h5>
+				<p>{{ page.street }}</p>
+				<p>{{ page.country }}</p>
+			</div>
+			<div class="col-md-4 contacts">
+				<img src="{{ page.phone-image }}">
+				<h5>{{ page.callus-heading }}</h5>
+				<p><span>Mobile: </span>{{ page.mobile }}</p>
+				<p><span>Free Line: </span>{{ page.freeline }}</p>
+			</div>
+			<div class="col-md-4 contacts">
+				<img src="{{ page.email-image }}">
+				<h5>{{ page.email-heading }}</h5>
+				<p>{{ page.info }}</p>
+				<p>{{ page.mail }}</p>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="send-message">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 contact-us-form">
+					<form>
+						<h2>{{ page.form-heading }}</h2>
+						<div class="services-underline-image-div"><img src="{{ page.underline }}"></div>
+						<input id="contact-form-fullname" type="text" name="fullname" placeholder="Your Full Name"><br>
+						<input id="contact-form-email" type="text" name="email" placeholder="Your Email"><br>
+						<textarea id="contact-form-message" type="text" name="message" placeholder="How Can We Help You?" rows="7"></textarea></br>
+         			    <input id="contact-form-submit" type="submit" value="Send">
+					</form>
+				</div>
+				<div class="col-md-6 girl-cleaning">
+					<img src="{{ page.girl-cleaning-image }}">
+				</div>
+			</div>
+		</div>
+	</section>
+</section>

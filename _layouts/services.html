@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+{% include header.html %}
+<body>
+	<section id="service">
+		<section id="service-banner" class="img-responsive" style="background-image: url({{ page.banner-image }}); background-repeat: no-repeat;background-position: center;background-size: cover">
+			<div class="container">
+				<div class="service-banner-content">
+					<h1>{{ page.banner-heading }}</h1>
+				</div>
+			</div>
+		</section>
+		<section id="service-body">
+			<div class="container">
+				<div class="row">
+					<div class="service-body-content">
+						<h1>{{ page.body-heading }}</h1>
+						<div class="services-underline-image-div"><img src="{{ page.underline }}"></div>
+						{{ page.description | markdownify }}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="service-body-listings">
+			<div class="container">
+				<div class="row">
+					<div class="service-body-listings-list">
+						<h1>{{ page.list-heading }}</h1>
+						<div class="underline-image-div"><img src="{{ page.underline }}"></div>
+						<div class="col-md-4 list-one">
+							{% if page.list-one %}
+							<ul>
+								{% for list in page.list-one %}
+									<li><i class="fa fa-check" aria-hidden="true"></i><span>{{ list[1] }}</span></li>
+								{% endfor %}
+							</ul>
+							{% endif %}
+						</div>
+						<div class="col-md-4 welcome-image">
+							<img src="{{ page.welcome-image }}">
+						</div>
+						<div class="col-md-4 list-two">
+							{% if page.list-two %}
+							<ul>
+								{% for list in page.list-two %}
+									<li><i class="fa fa-check" aria-hidden="true"></i><span>{{ list[1] }}</span></li>
+								{% endfor %}
+							</ul>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	
+{% include what-our-customers-say.html %}
+{% include footer.html %}
+</body>
+</html>

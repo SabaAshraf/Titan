@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+{% include header.html %}
+<body>
+	<section id="services">
+		<section id="services-banner" class="img-responsive" style="background-image: url({{ page.banner-image }});background-size: cover;background-repeat: no-repeat;background-position: center;">
+			<div class="container">
+				<div class="services-banner-content">
+					<h1>{{ page.banner-heading }}</h1>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section id="service-category-body">
+		<section id="service-category-body-header">
+			<div class="container">
+				<div class="service-category-body-heading">{{ page.body-heading }}</div>
+			</div>
+		</section>
+
+
+	   {% for services in site.servicecategories %}
+      	  	<section id="service-category-section" class="service-category-items">
+	        	<div class="container">
+	      	  		<div class="row">
+	      	  			<div class="col-md-6 service-category-section-image">
+	      	  				<img src="{{ services.image }}" class="img-responsive">
+	      	  			</div>
+	      	  			<div class="col-md-6 service-category-section-heading">
+	      		               <h4>{{ services.title }}</h4>
+	      		               <div class="service-category-section-content">
+	      		               <p>{{ services.content | markdownify }}</p> 
+	      		               </div>
+	      		               <div class="service-category-viewmore"><a href="{{ services.link }}">View More</a></div>
+	      	  			</div>
+	      	  		</div>
+	      	  	</div>
+      	  	</section>
+	 {% endfor %}  
+	</section>
+{% include what-our-customers-say.html %}
+{% include footer.html %}
+</body>
+</html>

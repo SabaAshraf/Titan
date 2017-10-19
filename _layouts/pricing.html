@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<section id="pricing">
+	<section id="pricing-banner" class="img-responsive" style="background-image: url({{ page.banner-image }}); background-repeat: no-repeat;background-position: center;background-size: cover;">
+		<div class="container">
+			<div class="pricing-banner-content">
+				<h1>{{ page.banner-heading }}</h1>
+			</div>
+		</div>
+	</section>
+	<section id="order-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-md-offset-1 order">
+					<h4>{{ page.one-time-a-week-heading }}</h4>
+					<div class="discount">{{ page.one-time-discount }}</div>
+					<p>{{ page.description }}</p>
+					<div class="order-now"><a href="">{{ page.order-now }}</a></div>
+				</div>
+				<div class="col-md-3 order">
+					<h4>{{ page.weekly-heading }}</h4>
+					<div class="discount"><span>{{ page.weeklypercent }}</span>{{ page.weekly-discount }}</div>
+					<p>{{ page.description }}</p>
+					<div class="order-now"><a href="">{{ page.order-now }}</a></div>
+				</div>
+				<div class="col-md-3 order">
+					<h4>{{ page.every2-weeks-heading }}</h4>
+					<div class="discount"><span>{{ page.two-week-percent }}</span>{{ page.twoweekly-discount }}</div>
+					<p>{{ page.description }}</p>
+					<div class="order-now"><a href="">{{ page.order-now }}</a></div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</section>

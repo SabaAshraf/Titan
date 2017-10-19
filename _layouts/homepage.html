@@ -1,0 +1,152 @@
+---
+layout: default
+---
+<!--Banner Section-->
+<div id="homepage-wrapper">
+	<div id="homepage-banner" class="img-responsive" style="background-image: url({{ page.banner-image }}); background-repeat: no-repeat;background-size: cover;">
+		<div class="container">
+			<div class="banner-content">
+				<h1>{{ page.banner-heading }}</h1>
+				<h4>{{ page.banner-subheading }}</h4>
+				<div class="banner-button">
+          			<a href="" class="main-menu-item">SCHEDULE CLEANING</a>
+          		</div>
+        	</div>
+		</div>
+	</div>
+	<div id="homepage-aboutus-section">
+		<div class="container">
+			<div class="row">
+				<h1>{{ page.aboutus-heading }}</h1>
+				<div class="underline-image-div"><img src="{{ page.underline }}"></div>
+				<h5>{{ page.aboutus-subheading }}</h5>
+				<div class="col-md-6 aboutus-image">
+					<img src="{{ page.aboutus-image }}">
+				</div>
+				<div class="col-md-6 aboutus-content">
+					<div class="list-items">
+						{% if page.list-1 %}
+						<ul>
+							{% for list in page.list-1 %}
+								<li><i class="fa fa-check" aria-hidden="true"></i><span>{{ list[1] }}</span></li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+					</div>
+					<div class="homepage-viewmore">
+            			<a href="">{{ page.aboutus-button }} </a>
+          			</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="homepage-titan-works">
+		<div class="container">
+			<div class="row">
+				<h1>{{ page.titan-works-heading }}</h1>
+				<div class="col-md-12 testimonial-section">
+					<div class="col-md-4 testimonial" id="you-book">
+						<img src="{{ page.you-book-image }}">
+						<p>{{ page.you-book-head }}</p>
+						<p>{{ page.you-book-subhead }}</p>
+					</div>
+					<div class="col-md-4 testimonial" id="we-clean">
+						<img src="{{ page.we-clean-image }}">
+						<p>{{ page.we-clean-head }}</p>
+						<p>{{ page.we-clean-subhead }}</p>
+					</div>
+					<div class="col-md-4 testimonial" id="you-relax">
+						<img src="{{ page.you-relax-image }}">
+						<p>{{ page.you-relax-head }}</p>
+						<p>{{ page.you-relax-subhead }}</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="banner-button">
+          			<a href="" class="main-menu-item">SCHEDULE CLEANING</a>
+          		</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="homepage-our-services-banner" class="img-responsive" style="background-image: url({{ page.our-services-banner-image }}); background-repeat: no-repeat;background-size: cover;">
+		<div class="container">
+			<div class="row">
+				<h1>{{ page.our-services-heading }}</h1>
+				<div class="services-underline-image-div"><img src="{{ page.underline }}"></div>
+				<div class="col-md-8 post-container">
+					<div class=" col-md-4 posts">
+						<div class="service_image">
+	        				<img src="{{ page.first-service-image }}">	
+	        			</div>
+	        				<div class="service_text">
+	        					<div class="services_heading">
+	        						{{ page.services-first-heading }}
+	        					</div>
+	        					<div class="services_description">
+	        						{{ page.services-first-description }}
+	        					</div>
+	        					<div class="services_link">
+	        					 <a href="">{{ page.services-first-link }}</a>
+	        					</div>
+	        				</div>
+					</div>
+					<div class="col-md-4 posts">
+						<div class="service_image">
+	        				<img src="{{ page.second-service-image }}">	
+	        			</div>
+	        				<div class="service_text">
+	        					<div class="services_heading">
+	        						{{ page.services-second-heading }}
+	        					</div>
+	        					<div class="services_description">
+	        						{{ page.services-second-description }}
+	        					</div>
+	        					<div class="services_link">
+	        					 <a href="">{{ page.services-second-link }}</a>
+	        					</div>
+	        				</div>
+					</div>
+				</div>
+				<div class="col-md-8 post-container" style="margin-bottom: 75px">
+					<div class="col-md-4 posts">
+						<div class="service_image">
+	        				<img src="{{ page.third-service-image }}">	
+	        			</div>
+	        				<div class="service_text">
+	        					<div class="services_heading">
+	        						{{ page.services-third-heading }}
+	        					</div>
+	        					<div class="services_description">
+	        						{{ page.services-third-description }}
+	        					</div>
+	        					<div class="services_link">
+	        					 <a href="">{{ page.services-third-link }}</a>
+	        					</div>
+	        				</div>
+					</div>
+					<div class="col-md-4 posts">
+						<div class="service_image">
+	        				<img src="{{ page.fourth-service-image }}">	
+	        			</div>
+	        				<div class="service_text">
+	        					<div class="services_heading">
+	        						{{ page.services-fourth-heading }}
+	        					</div>
+	        					<div class="services_description">
+	        						{{ page.services-fourth-description }}
+	        					</div>
+	        					<div class="services_link">
+	        					 <a href="">{{ page.services-fourth-link }}</a>
+	        					</div>
+	        				</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	{% include what-our-customers-say.html %}
+	
+</div>
